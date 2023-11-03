@@ -164,7 +164,7 @@ echo "Popping zenity!"
 echo ""
 echo "Waiting for zenity to be dealt with (press OK or be closed), then we continue."
 echo ""
-notify-send "Wake up!"
+notify-send "Medicine!"
 sleep 0.2s
 ( speaker-test -t sine -f 1000 )& pid=$! ; sleep 1s ; kill -9 $pid
 sleep 0.2s
