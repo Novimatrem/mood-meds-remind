@@ -91,11 +91,12 @@ aplay $(pwd)/silence.wav # Play a sound so my desktop speakers won't miss the fi
 espeak -p 66 -s 200 ". ... ."
 sleep 2s
 
-# Set volume to reasonable percentage to wake me up, but not to deafen the neighborhood
+# Set volume
 echo ""
-echo "Speaker volume to 53%!"
+echo "Speaker volume to %!"
 echo ""
-amixer -D pulse sset Master 53%
+amixer -D pulse sset Master 153%
+pactl set-sink-volume @DEFAULT_SINK@ 153%
 
 function flashing {
 sleep 0.1
