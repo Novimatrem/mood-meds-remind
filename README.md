@@ -16,6 +16,11 @@ I usually place it in; ``/opt/`` making the final path ``/opt/mood-meds-remind/`
 
 Make a startup program using the "Startup Applications" GUI in which the command is ``bash /path/to/mood-meds-remind.sh`` (that command usually being ``bash /opt/mood-meds-remind/mood-meds-remind.sh``, then restart your computer.
 
+# elementary OS workaround
+For sound to play while the system is locked, in elementary OS, you need to run the following command and then reboot the system.
+
+``sudo adduser $(whoami) audio``
+
 # License (code)
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)  
 
